@@ -28,3 +28,18 @@ Guests users can RSVP and recieve notifications if the meeting is cancled or upd
 - Unfollow Client
 - Who Following List 
 - Meeting List of Following 
+
+### Order 
+1. Add a Meeting 
+2. My Upcoming Meetings, All Meetings 
+3. Edit/Remove Meeting, Add Meeting to Cal(Guest), Follow Client(Guest), Search, View Meeting Details 
+4. Meetings I'm attending, Clients Following(Guest), Meetings by Client 
+5. Remove meeting from Cal (Client), unfollow client (Guest) 
+
+### First Steps 
+1. Add Meeting 
+2. Add to Calendar (Guest) 
+3. Follow Client (Guest) 
+4. -- All Upcoming Gigs (view)
+5. -- Meetings attending (view) 
+6. -- Who Following (view)  
