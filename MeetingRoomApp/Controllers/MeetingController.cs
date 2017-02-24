@@ -1,17 +1,26 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using MeetingRoomApp.Models;
+using MeetingRoomApp.ViewModels;
 using System.Linq;
-using System.Web;
 using System.Web.Mvc;
 
 namespace MeetingRoomApp.Controllers
 {
     public class MeetingController : Controller
     {
-        // GET: Meeting
+        private readonly ApplicationDbContext _context; 
+
+        public MeetingController()
+        {
+            _context = new ApplicationDbContext(); 
+        }
+
         public ActionResult Create()
         {
-            return View();
+            var viewModel = new MeetingFormViewModel()
+            {
+                Categories = _context.Category.ToList()
+            };
+            return View(viewModel);
         }
     }
 }
