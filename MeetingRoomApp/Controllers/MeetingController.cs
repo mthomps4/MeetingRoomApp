@@ -30,6 +30,12 @@ namespace MeetingRoomApp.Controllers
         [HttpPost]
         public ActionResult Create(MeetingFormViewModel viewModel)
         {
+            if (!ModelState.IsValid)
+            {
+                viewModel.Categories = _context.Category.ToList();
+                return View("Create", viewModel);
+            }
+
             //var userId = User.Identity.GetUserId(); 
             //var user = _context.Users.Single(u => u.Id == userId);
             //var selectedCat = _context.Category.Single(c => c.Id == viewModel.Category); 
@@ -38,7 +44,7 @@ namespace MeetingRoomApp.Controllers
             var meeting = new Meeting
             {
                 leadById = User.Identity.GetUserId(), 
-                DateTime = viewModel.DateTime,
+                DateTime = viewModel.GetDateTime(),
                 CategoryId = viewModel.Category, 
                 Venue = viewModel.Venue
             };
