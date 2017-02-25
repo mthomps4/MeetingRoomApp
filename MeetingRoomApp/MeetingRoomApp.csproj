@@ -190,6 +190,14 @@
     <Compile Include="Migrations\201702211633009_PopulateCategoriesTable.Designer.cs">
       <DependentUpon>201702211633009_PopulateCategoriesTable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201702251826532_AddForeignKeyPropsToMeeting.cs" />
+    <Compile Include="Migrations\201702251826532_AddForeignKeyPropsToMeeting.Designer.cs">
+      <DependentUpon>201702251826532_AddForeignKeyPropsToMeeting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201702251828526_updatedPropName.cs" />
+    <Compile Include="Migrations\201702251828526_updatedPropName.Designer.cs">
+      <DependentUpon>201702251828526_updatedPropName.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\ApplicationDBContext.cs" />
@@ -281,6 +289,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201702211633009_PopulateCategoriesTable.resx">
       <DependentUpon>201702211633009_PopulateCategoriesTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201702251826532_AddForeignKeyPropsToMeeting.resx">
+      <DependentUpon>201702251826532_AddForeignKeyPropsToMeeting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201702251828526_updatedPropName.resx">
+      <DependentUpon>201702251828526_updatedPropName.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

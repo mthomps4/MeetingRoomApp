@@ -8,8 +8,11 @@ namespace MeetingRoomApp.Models
         public int Id { get; set; }
         
         //Who's leading 
-        [Required]
+        
         public ApplicationUser leadBy { get; set; }
+
+        [Required]
+        public string leadById { get; set; }
         
         //When 
         public DateTime DateTime { get; set; }
@@ -20,8 +23,10 @@ namespace MeetingRoomApp.Models
         public string Venue { get; set; }
         
         //Type 
-        [Required]
         public Category Category { get; set;}
+
+        [Required]
+        public byte CategoryId { get; set; }
     }
 
 }
