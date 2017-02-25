@@ -28,6 +28,7 @@ namespace MeetingRoomApp.Controllers
 
         [Authorize]
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public ActionResult Create(MeetingFormViewModel viewModel)
         {
             if (!ModelState.IsValid)
